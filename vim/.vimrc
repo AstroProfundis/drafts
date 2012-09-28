@@ -10,6 +10,13 @@
 "  for MS-DOS and Win32:  $VIM\_vimrc
 "	    for OpenVMS:  sys$login:.vimrc
 
+set encoding=UTF-8
+set fileencodings=UTF-8,GBK,GB18030
+set formatoptions=tcrqn
+set autoindent
+set smartindent
+"set cindent
+set smarttab
 " When started as "evim", evim.vim will already have done these settings.
 if v:progname =~? "evim"
   finish
@@ -64,6 +71,14 @@ if has("autocmd")
   " 'cindent' is on in C files, etc.
   " Also load indent files, to automatically do language-dependent indenting.
   filetype plugin indent on
+  autocmd FileType c set omnifunc=ccomplete#Complete
+  autocmd FileType python set omnifunc=pythoncomplete#Complete
+  autocmd FileType javascript set omnifunc=javascriptcomplete#CompleteJS
+  autocmd FileType html set omnifunc=htmlcomplete#CompleteTags
+  autocmd FileType css set omnifunc=csscomplete#CompleteCSS
+  autocmd FileType xml set omnifunc=xmlcomplete#CompleteTags
+  autocmd FileType php set omnifunc=phpcomplete#CompletePHP
+  set magic
 
   " Put these in an autocmd group, so that we can delete them easily.
   augroup vimrcEx
@@ -97,3 +112,24 @@ if !exists(":DiffOrig")
   command DiffOrig vert new | set bt=nofile | r ++edit # | 0d_ | diffthis
 		  \ | wincmd p | diffthis
 endif
+
+" winmanager   
+  let g:NERDTree_title = "[NERDTree]"
+  function! NERDTree_Start()
+      exe 'NERDTree'
+  endfunction
+  function! NERDTree_IsValid()
+      return 1
+  endfunction
+
+  let g:winManagerWindowLayout = 'NERDTree'
+  "let g:winManagerWindowLayout='NERDTree|BufExplorer'
+  "let g:winManagerWindowLayout = 'FileExplorer|TagList'
+  "let g:winManagerWindowLayout = 'FileExplorer'
+  let g:winManagerWidth = 25
+  let g:defaultExplorer = 1
+  nmap wm :WMToggle<cr>
+  "nmap <C-W><C-F> :FirstExplorerWindow<cr>
+  "nmap <C-W><C-B> :BottomExplorerWindow<cr>
+  "autocmd BufWinEnter \[Buf\ List\] setl nonumber
+
