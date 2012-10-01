@@ -1,0 +1,703 @@
+# This hosts file is for costumized dnsmasq service
+# It is specificaly modified for users in China Mainland
+# For personal uses, some private hosts is added
+# Many thanks to SmartHosts project on Google Code
+# And for security reasons, some lines are modified,
+# commented, or removed from the file on GitHub.
+#
+# CopyRight (R) 2012 AstroProfundis. Some Rights Reserved.
+
+
+# Costum - AstroProfundis
+#173.83.150.2      ngc.xgfw.us
+#173.83.150.2      gfw.gov.cn
+#173.83.150.2      www.gfw.gov.cn
+141.101.125.23    cf.cdn.blog.atr.me # CloudFlare EU
+141.101.126.127   cf.cdn.blog.atr.me # CloudFlare EU
+141.101.126.115   cf.cdn.blog.atr.me # CloudFlare EU
+103.22.201.103    cf.cdn.blog.atr.me # CloudFlare HK
+103.22.200.115    cf.cdn.blog.atr.me # CloudFlare HK
+103.22.200.61     cf.cdn.blog.atr.me # CloudFlare HK
+103.22.201.23     cf.cdn.blog.atr.me # CloudFlare HK
+199.83.132.48     cf.cdn.blog.atr.me # CloudFlare US
+173.245.60.41     cf.cdn.blog.atr.me # CloudFlare US
+2400:cb00:2048:0001:0000:0000:adf5:3c29 cf.cdn.blog.atr.me
+2400:cb00:2048:0001:0000:0000:adf5:3c73 cf.cdn.blog.atr.me
+91.215.157.198    embr.oxoox.me
+50.6.132.222      t.co
+50.6.132.222      www.t.co
+
+
+#Fuck GFW - AstroProfundis
+
+# ==> Google
+# 203.208.45.1-8 16-39 62 65-72 80-103
+# 74.125.236.128-143
+# 74.125.71.* - not confirmed yet
+# 72.14.*.* - no ssl - 2012.01.30
+
+203.208.46.212     www.google.com
+203.208.46.208     www.google.com
+203.208.46.211     www.google.com
+203.208.46.102     plus.url.google.com
+74.125.31.102      plus.google.com
+203.208.46.176     drive.google.com
+203.208.46.177     music.google.com
+203.208.46.211     mail.google.com
+203.208.46.212     code.google.com
+74.125.45.138      profiles.google.com
+74.125.71.99       picasa.com
+74.125.71.99       picasa.google.com
+74.125.71.132      lh0.googleusercontent.com
+74.125.71.132      lh1.googleusercontent.com
+74.125.71.132      lh2.googleusercontent.com
+74.125.71.132      lh3.googleusercontent.com
+74.125.71.132      lh4.googleusercontent.com
+74.125.71.132      lh5.googleusercontent.com
+74.125.71.132      lh5.ggpht.com
+74.125.71.132      lh6.googleusercontent.com
+74.125.71.101      talkgadget.google.com
+74.125.71.100      talkgadget.google.com
+72.14.204.100      talkgadget.google.com
+173.194.69.138     talkgadget.google.com
+203.208.46.84      accounts.google.com
+203.208.46.84      accounts.l.google.com
+74.125.71.132      googlehosted.l.googleusercontent.com
+74.125.71.132      images0-focus-opensocial.googleusercontent.com
+74.125.71.132      images1-focus-opensocial.googleusercontent.com
+74.125.71.132      images2-focus-opensocial.googleusercontent.com
+74.125.71.132      images3-focus-opensocial.googleusercontent.com
+74.125.71.132      images4-focus-opensocial.googleusercontent.com
+74.125.71.132      images5-focus-opensocial.googleusercontent.com
+74.125.71.132      images6-focus-opensocial.googleusercontent.com
+74.125.71.120      ssl.gstatic.com
+74.125.77.141      appspot.com
+74.125.45.101      spreadsheets.google.com
+203.208.46.176     docs.google.com
+74.125.235.142     play.google.com
+
+# ==> From GoogleCode
+#74.125.79.100	music.google.com
+74.125.79.100	music.googleusercontent.com
+74.125.79.100	music-streaming.l.google.com
+74.125.79.100	large-uploads.l.google.com
+74.125.79.100	uploadsj.clients.google.com
+74.125.79.100	t.doc-0-0-sj.sj.googleusercontent.com
+203.208.46.211	google.com
+203.208.46.211	talkgadget.google.com
+
+203.208.46.211	groups.google.com
+74.125.79.100	talkx.l.google.com
+203.208.46.211	themes.googleusercontent.com
+203.208.46.211	market.android.com
+203.208.46.211	toolbar.google.com
+203.208.46.211	0-focus-opensocial.googleusercontent.com
+203.208.46.211	0.gvt0.cn
+203.208.46.211	0.gvt0.com
+203.208.46.211	1.gvt0.cn
+203.208.46.211	1.gvt0.com
+203.208.46.211	2.gvt0.cn
+203.208.46.211	2.gvt0.com
+203.208.46.211	3.gvt0.com
+203.208.46.211	4.gvt0.cn
+203.208.46.211	4.gvt0.com
+203.208.46.211	5.gvt0.com
+203.208.46.211	3hdrrlnlknhi77nrmsjnjr152ueo3soc-a-calendar-opensocial.googleusercontent.com
+203.208.46.211	53rd6p0catml6vat6qra84rs0del836d-a-oz-opensocial.googleusercontent.com
+203.208.46.211	59cbv4l9s05pbaks9v77vc3mengeqors-a-oz-opensocial.googleusercontent.com
+203.208.46.211	8kubpeu8314p2efdd7jlv09an9i2ljdo-a-oz-opensocial.googleusercontent.com
+203.208.46.211	adstvca8k2ooaknjjmv89j22n9t676ve-a-oz-opensocial.googleusercontent.com
+203.208.46.211	ajax.googleapis.com
+203.208.46.211	a-oz-opensocial.googleusercontent.com
+203.208.46.211	appspot.com
+203.208.46.211	www.appspot.com
+203.208.46.211	apis.google.com
+203.208.46.211	bks0.books.google.com
+203.208.46.211	bks1.books.google.com
+203.208.46.211	bks2.books.google.com
+203.208.46.211	bks3.books.google.com
+203.208.46.211	bks4.books.google.com
+203.208.46.211	bks5.books.google.com
+203.208.46.211	bks6.books.google.com
+203.208.46.211	bks7.books.google.com
+203.208.46.211	bks8.books.google.com
+203.208.46.211	bks9.books.google.com
+203.208.46.211	blogsearch.google.cn
+203.208.46.211	www.gmail.com
+203.208.46.211	blogsearch.google.com.hk
+203.208.46.211	books.google.com
+203.208.46.211	apps.google.com
+203.208.46.211	appengine.google.com
+203.208.46.211	browserchannel-docs.l.google.com
+203.208.46.211	browserchannel-spreadsheets.l.google.com
+203.208.46.211	browsersync.google.com
+203.208.46.211	bt26mravu2qpe56n8gnmjnpv2inl84bf-a-oz-opensocial.googleusercontent.com
+203.208.46.211	cache.pack.google.com
+203.208.46.211	calendar.google.com
+
+203.208.46.211	chrome.google.com
+203.208.46.211	checkout.google.com
+203.208.46.211	checkout.l.google.com
+203.208.46.211	clients1.google.com
+203.208.46.211	clients1.googleusercontent.com
+203.208.46.211	clients2.google.com
+203.208.46.211	clients2.googleusercontent.com
+203.208.46.211	clients3.google.com
+203.208.46.211	clients3.googleusercontent.com
+203.208.46.211	clients4.google.com
+203.208.46.211	clients4.googleusercontent.com
+203.208.46.211	clients5.google.com
+203.208.46.211	clients5.googleusercontent.com
+203.208.46.211	clients6.google.com
+203.208.46.211	clients6.googleusercontent.com
+203.208.46.211	clients7.google.com
+203.208.46.211	clients7.googleusercontent.com
+203.208.46.211	code.google.com
+203.208.46.211	csi.gstatic.com
+203.208.46.211	desktop.google.com
+203.208.46.211	desktop2.google.com
+203.208.46.211	ditu.google.com
+203.208.46.211	dl.google.com
+203.208.46.211	dl-ssl.google.com
+203.208.46.211	docs.google.com
+203.208.46.211	domains.googlesyndication.com
+203.208.46.211	earth.google.com
+203.208.46.211	docs0.google.com
+203.208.46.211	docs1.google.com
+203.208.46.211	docs2.google.com
+203.208.46.211	encrypted.google.com
+203.208.46.211	encrypted.google.com.hk
+203.208.46.211	encrypted-tbn0.google.com
+203.208.46.211	encrypted-tbn1.google.com
+203.208.46.211	encrypted-tbn2.google.com
+203.208.46.211	encrypted-tbn3.google.com
+203.208.46.211	feedback.googleusercontent.com
+203.208.46.211	feedburner.google.com
+203.208.46.211	feedproxy.google.com
+203.208.46.211	feeds.feedburner.com
+203.208.46.211	finance.google.com
+203.208.46.211	filetransferenabled.mail.google.com
+203.208.46.211	fonts.googleapis.com
+203.208.46.211	g0.gstatic.com
+203.208.46.211	gg.google.com
+203.208.46.211	ghs.google.com
+203.208.46.211	ghs.l.google.com
+203.208.46.211	googlehosted.l.googleusercontent.com
+203.208.46.211	id.google.cn
+203.208.46.211	id.google.com
+203.208.46.211	id.google.com.hk
+203.208.46.211	images.google.com
+203.208.46.211	images.google.com.hk
+74.125.71.132   images0-focus-opensocial.googleusercontent.com
+74.125.71.132   i8brh95qor6r54nkl52hidj2ggcs4jgm-a-oz-opensocial.googleusercontent.com
+74.125.71.132   images1-focus-opensocial.googleusercontent.com
+74.125.71.132   images2-focus-opensocial.googleusercontent.com
+74.125.71.132   images3-focus-opensocial.googleusercontent.com
+74.125.71.132   images4-focus-opensocial.googleusercontent.com
+74.125.71.132   images5-focus-opensocial.googleusercontent.com
+74.125.71.132   images6-focus-opensocial.googleusercontent.com
+74.125.71.132   images-lso-opensocial.googleusercontent.com
+74.125.71.132   images-oz-opensocial.googleusercontent.com
+74.125.71.132   images-pos-opensocial.googleusercontent.com
+74.125.71.132   k6v18tjr24doa89b55o3na41kn4v73eb-a-oz-opensocial.googleusercontent.com
+203.208.46.211	khm.google.com
+203.208.46.211	khms0.google.com
+203.208.46.211	khms1.google.com
+203.208.46.211	labs.google.com
+203.208.46.211	lh1.ggpht.com
+203.208.46.211	lh1.googleusercontent.com
+203.208.46.211	lh2.ggpht.com
+203.208.46.211	lh2.googleusercontent.com
+203.208.46.211	lh3.ggpht.com
+203.208.46.211	lh3.googleusercontent.com
+203.208.46.211	lh4.ggpht.com
+203.208.46.211	lh4.googleusercontent.com
+203.208.46.211	lh5.ggpht.com
+203.208.46.211	lh5.googleusercontent.com
+203.208.46.211	lh6.ggpht.com
+203.208.46.211	lh6.googleusercontent.com
+203.208.46.211	m.google.com
+203.208.46.211	maps.google.com
+203.208.46.211	maps.gstatic.com
+203.208.46.211	maps-api-ssl.google.com
+203.208.46.211	mt.l.google.com
+203.208.46.211	mt0.google.com
+203.208.46.211	mt1.google.com
+203.208.46.211	mt2.google.com
+203.208.46.211	mt3.google.com
+203.208.46.211	mts0.google.com
+203.208.46.211	mts1.google.com
+203.208.46.211	mw2.google.com
+203.208.46.211	news.google.com
+203.208.46.211	newsfeed-dot-latest-dot-rovio-ad-engine.appspot.com
+203.208.46.211	nt0.ggpht.com
+203.208.46.211	nt1.ggpht.com
+203.208.46.211	nt2.ggpht.com
+203.208.46.211	nt3.ggpht.com
+203.208.46.211	oauth.googleusercontent.com
+203.208.46.211	ode25pfjgmvpquh3b1oqo31ti5ibg5fr-a-calendar-opensocial.googleusercontent.com
+203.208.46.211	ob7f2qc0i50kbjnc81vkhgmb5hsv7a8l-a-oz-opensocial.googleusercontent.com
+203.208.46.211	picasa.google.com
+203.208.46.211	picasaweb.google.com
+203.208.46.211	picasaweb.google.com.hk
+203.208.46.211	places.google.com
+203.208.46.211	plus.google.com.hk
+203.208.46.211	plusone.google.com
+203.208.46.211	project-slingshot-gp.appspot.com
+203.208.46.211	video.google.com
+203.208.46.211	voice.google.com
+203.208.46.211	webcache.googleusercontent.com
+203.208.46.211	wenda.google.com.hk
+203.208.46.211	writely.l.google.com
+203.208.46.211	www.google-analytics.com
+203.208.46.211	www.googleadservices.com
+203.208.46.211	writely-china.l.google.com
+203.208.46.211	www.googleapis.com
+203.208.46.211	www.googlelabs.com
+203.208.46.211	www.gstatic.com
+203.208.46.211	www-calendar-opensocial.googleusercontent.com
+203.208.46.211	www-opensocial.googleusercontent.com
+203.208.46.211	www-oz-opensocial.googleusercontent.com
+203.208.46.211	goto.google.com
+203.208.46.211	wire.l.google.com
+203.208.46.211	desktop.google.com.hk
+203.208.46.211	jmt0.google.com
+203.208.46.211	id.l.google.com
+203.208.46.211	www.google.cn
+203.208.46.211	www.gstatic.cn
+203.208.46.211	stat.top100.cn
+203.208.46.211	audio.top100.cn
+203.208.46.211	audio2.top100.cn
+203.208.46.211	music.googleusercontent.cn
+203.208.46.211	www.l.google.com
+203.208.46.211	www0.l.google.com
+203.208.46.211	www1.l.google.com
+203.208.46.211	www2.l.google.com
+203.208.46.211	www3.l.google.com
+203.208.46.211	www4.l.google.com
+203.208.46.211	www.google.com.hk
+203.208.46.211	suggestqueries.google.com
+203.208.46.211	suggestqueries.l.google.com
+203.208.46.211	clients1.google.com.hk
+203.208.46.211	clients1.google.com.tw
+203.208.46.211	linkhelp.clients.google.com
+203.208.46.211	clients.l.google.com
+203.208.46.211	encrypted-tbn.l.google.com
+203.208.46.211	ghs46.google.com
+203.208.46.211	ghs46.l.google.com
+203.208.46.211	appspot.l.google.com
+203.208.46.211	gv-gadget.appspot.com
+203.208.46.211	googlesharedspaces.appspot.com
+203.208.46.211	blogsearch.google.com
+203.208.46.211	browsersync.l.google.com
+203.208.46.211	toolbarqueries.google.com
+203.208.46.211	toolbarqueries.l.google.com
+203.208.46.211	chrome.angrybirds.com
+203.208.46.211	r2303.latest.project-slingshot-hr.appspot.com
+203.208.46.211	code.l.google.com
+203.208.46.211	googlecode.l.google.com
+203.208.46.211	chromium.googlecode.com
+203.208.46.211	earth-api-samples.googlecode.com
+203.208.46.211	gmaps-samples-flash.googlecode.com
+203.208.46.211	google-code-feed-gadget.googlecode.com
+203.208.46.211	closure-library.googlecode.com
+203.208.46.211	desktop.l.google.com
+203.208.46.211	docs3.google.com
+203.208.46.211	docs4.google.com
+203.208.46.211	docs5.google.com
+203.208.46.211	docs6.google.com
+203.208.46.211	docs7.google.com
+203.208.46.211	docs8.google.com
+203.208.46.211	docs9.google.com
+203.208.46.211	0.docs.google.com
+203.208.46.211	1.docs.google.com
+203.208.46.211	2.docs.google.com
+203.208.46.211	3.docs.google.com
+203.208.46.211	4.docs.google.com
+203.208.46.211	5.docs.google.com
+203.208.46.211	spreadsheets-china.l.google.com
+203.208.46.211	writely-com.l.google.com
+203.208.46.211	dl.l.google.com
+203.208.46.211	spreadsheets.l.google.com
+203.208.46.211	auth.keyhole.com
+203.208.46.211	geoauth.google.com
+203.208.46.211	mars.google.com
+203.208.46.211	local.google.com
+203.208.46.211	map.google.com
+203.208.46.211	maps.l.google.com
+203.208.46.211	kh.google.com
+203.208.46.211	kh.l.google.com
+203.208.46.211	khmdb.google.com
+203.208.46.211	khm.l.google.com
+203.208.46.211	khm0.google.com
+203.208.46.211	khm1.google.com
+203.208.46.211	khm2.google.com
+203.208.46.211	khm3.google.com
+203.208.46.211	cbk0.google.com
+203.208.46.211	cbk1.google.com
+203.208.46.211	cbk2.google.com
+203.208.46.211	cbk3.google.com
+203.208.46.211	khms.google.com
+203.208.46.211	khms2.google.com
+203.208.46.211	khms3.google.com
+203.208.46.211	cbks0.google.com
+203.208.46.211	cbks1.google.com
+203.208.46.211	cbks2.google.com
+203.208.46.211	cbks3.google.com
+203.208.46.211	khms.l.google.com
+203.208.46.211	mw1.google.com
+203.208.46.211	mt.google.com
+203.208.46.211	gg.google.cn
+203.208.46.211	csi.l.google.com
+203.208.46.211	ditu.google.cn
+203.208.46.211	mt.google.cn
+203.208.46.211	mt0.google.cn
+203.208.46.211	mt1.google.cn
+203.208.46.211	mt2.google.cn
+203.208.46.211	mt3.google.cn
+203.208.46.211	mts.google.com
+203.208.46.211	mts2.google.com
+203.208.46.211	mts3.google.com
+203.208.46.211	mts.l.google.com
+203.208.46.211	maps.gstatic.cn
+203.208.46.211	mobilemaps.clients.google.com
+203.208.46.211	nt4.ggpht.com
+203.208.46.211	nt5.ggpht.com
+203.208.46.211	photos.google.com
+203.208.46.211	picasaweb.l.google.com
+203.208.46.211	lh2.l.google.com
+203.208.46.211	photos-ugc.l.google.com
+203.208.46.211	wifi.google.com
+203.208.46.211	wifi.l.google.com
+203.208.46.211	t0.gstatic.com
+203.208.46.211	t1.gstatic.com
+203.208.46.211	t2.gstatic.com
+203.208.46.211	t3.gstatic.com
+203.208.46.211	g1.gstatic.com
+203.208.46.211	g2.gstatic.com
+203.208.46.211	g3.gstatic.com
+203.208.46.211	mt0.gstatic.com
+203.208.46.211	mt1.gstatic.com
+203.208.46.211	mt2.gstatic.com
+203.208.46.211	mt3.gstatic.com
+203.208.46.211	mt4.gstatic.com
+203.208.46.211	mt5.gstatic.com
+203.208.46.211	mt6.gstatic.com
+203.208.46.211	mt7.gstatic.com
+203.208.46.211	chart.apis.google.com
+203.208.46.211	googleapis.l.google.com
+203.208.46.211	chart.googleapis.com
+203.208.46.211	maps.googleapis.com
+203.208.46.211	translate.googleapis.com
+203.208.46.211	googleapis-ajax.google.com
+203.208.46.211	googleapis-ajax.l.google.com
+203.208.46.211	r3085-dot-latest-dot-project-slingshot-gp.appspot.com
+203.208.46.211	r3091-dot-latest-dot-project-slingshot-gp.appspot.com
+203.208.46.211	r3101-dot-latest-dot-project-slingshot-gp.appspot.com
+203.208.46.211	r70rmsn4s0rhk6cehcbbcbfbs31pu0va-a-oz-opensocial.googleusercontent.com
+203.208.46.23   r8.pek01s01.c.youtube.com
+203.208.46.23   r9.pek01s01.c.youtube.com
+203.208.46.211	rbjhe237k979f79d87gmenp3gejfonu9-a-oz-opensocial.googleusercontent.com
+203.208.46.211	s1.googleusercontent.com
+203.208.46.211	s2.googleusercontent.com
+203.208.46.211	s3.googleusercontent.com
+203.208.46.211	s4.googleusercontent.com
+203.208.46.211	s5.googleusercontent.com
+203.208.46.211	s6.googleusercontent.com
+203.208.46.211	safebrowsing.clients.google.com
+203.208.46.211	safebrowsing-cache.google.com
+203.208.46.211	sandbox.google.com
+203.208.46.211	sb.google.com
+203.208.46.211	scholar.google.com
+203.208.46.211	scholar.l.google.com
+203.208.46.211	services.google.com
+203.208.46.211	sites.google.com
+203.208.46.211	sketchup.google.com
+203.208.46.211	spreadsheet.google.com
+203.208.46.211	spreadsheets.google.com
+203.208.46.211	spreadsheets0.google.com
+203.208.46.211	spreadsheets1.google.com
+203.208.46.211	spreadsheets2.google.com
+203.208.46.211	ssl.google-analytics.com
+203.208.46.211	ssl.gstatic.com
+203.208.46.211	blogger.googleusercontent.com
+203.208.46.211	www.googleusercontent.com
+203.208.46.211	doc-00-7o-docs.googleusercontent.com
+203.208.46.211	doc-08-7o-docs.googleusercontent.com
+203.208.46.211	doc-0c-7o-docs.googleusercontent.com
+203.208.46.211	doc-0g-7o-docs.googleusercontent.com
+203.208.46.211	doc-0s-7o-docs.googleusercontent.com
+203.208.46.211	doc-10-7o-docs.googleusercontent.com
+203.208.46.211	doc-14-7o-docs.googleusercontent.com
+203.208.46.211	lh0.googleusercontent.com
+203.208.46.211	music-onebox.googleusercontent.com
+203.208.46.211	static.googleusercontent.com
+203.208.46.211	translate.googleusercontent.com
+203.208.46.211	code-opensocial.googleusercontent.com
+203.208.46.211	spreadsheets-opensocial.googleusercontent.com
+203.208.46.211	images-docs-opensocial.googleusercontent.com
+203.208.46.211	www-gm-opensocial.googleusercontent.com
+203.208.46.211	www-opensocial-sandbox.googleusercontent.com
+203.208.46.211	www-fc-opensocial.googleusercontent.com
+203.208.46.211	www-focus-opensocial.googleusercontent.com
+203.208.46.211	images7-focus-opensocial.googleusercontent.com
+203.208.46.211	images8-focus-opensocial.googleusercontent.com
+203.208.46.211	images9-focus-opensocial.googleusercontent.com
+203.208.46.211	1-focus-opensocial.googleusercontent.com
+203.208.46.211	2-focus-opensocial.googleusercontent.com
+203.208.46.211	3-focus-opensocial.googleusercontent.com
+203.208.46.211	www-kix-opensocial.googleusercontent.com
+203.208.46.211	www-onepick-opensocial.googleusercontent.com
+203.208.46.211	images-onepick-opensocial.googleusercontent.com
+203.208.46.211	www-open-opensocial.googleusercontent.com
+203.208.46.211	0-open-opensocial.googleusercontent.com
+203.208.46.211	1-open-opensocial.googleusercontent.com
+203.208.46.211	2-open-opensocial.googleusercontent.com
+203.208.46.211	3-open-opensocial.googleusercontent.com
+203.208.46.211	4fjvqid3r3oq66t548clrdj52df15coc-a-oz-opensocial.googleusercontent.com
+203.208.46.211	debh8vg7vd93bco3prdajidmm7dhql3f-a-oz-opensocial.googleusercontent.com
+203.208.46.211	hsco54a20sh11q9jkmb51ad2n3hmkmrg-a-oz-opensocial.googleusercontent.com
+203.208.46.211	qhie5b8u979rnch1q0hqbrmbkn9estf7-a-oz-opensocial.googleusercontent.com
+203.208.46.211	u807isd5egseeabjccgcns005p2miucq-a-oz-opensocial.googleusercontent.com
+203.208.46.211	upt14k1i2veesusrda9nfotcrbp9d7p5-a-oz-opensocial.googleusercontent.com
+203.208.46.211	toolbarqueries.clients.google.com
+203.208.46.211	toolbarqueries.google.com.hk
+203.208.46.211	tools.google.com
+203.208.46.211	translate.google.com
+203.208.46.211	goo.gl
+203.208.46.211	g.co
+203.208.46.211	autoproxy-gfwlist.googlecode.com
+203.208.46.211	video-stats.l.google.com
+203.208.46.211	ytstatic.l.google.com
+203.208.46.211	static.cache.l.google.com
+203.208.46.211	magnifier.blogspot.com
+
+74.125.71.104 	smarthosts.googlecode.com
+#Google
+
+
+#Pics START
+208.94.0.21	a.yfrog.com
+208.94.0.21	yfrog.com
+208.94.0.21	www.yfrog.com
+208.17.68.209	oi40.tinypic.com
+209.17.70.143	oi41.tinypic.com
+209.17.70.143	oi42.tinypic.com
+209.17.70.143	oi43.tinypic.com
+209.17.70.143	oi44.tinypic.com
+209.17.70.143	oi45.tinypic.com
+209.17.70.143	oi46.tinypic.com
+209.17.70.143	oi47.tinypic.com
+209.17.70.143	oi48.tinypic.com
+209.17.70.143	oi49.tinypic.com
+209.17.70.143	oi50.tinypic.com
+208.17.68.209	oi51.tinypic.com
+208.17.68.209	oi52.tinypic.com
+208.17.68.209	oi53.tinypic.com
+208.17.68.209	oi54.tinypic.com
+208.17.68.209	oi55.tinypic.com
+208.17.68.209	oi56.tinypic.com
+210.168.27.82  pixiv.net
+113.33.39.195  pixiv.net
+210.168.27.107 pixiv.net
+125.110.191.29 pixiv.net
+#Pics END
+
+
+#Flickr START
+#68.142.214.24 flickr.com
+#68.142.214.24 www.flickr.com
+#68.142.214.43 static.flickr.com
+#68.142.214.43 farm1.static.flickr.com
+#69.147.90.159 farm2.static.flickr.com
+#76.13.18.78   farm3.static.flickr.com
+#67.195.19.66  farm4.static.flickr.com
+#76.13.18.79   farm5.static.flickr.com
+#98.139.197.254 farm6.static.flickr.com
+#98.139.102.46 farm7.static.flickr.com
+#98.136.43.76 geo.yahoo.com
+#68.142.250.161 l.yimg.com
+#96.6.93.227 s.yimg.com
+#98.137.88.88 d.yimg.com
+#68.142.196.57 c5.ah.yahoo.com
+#124.108.120.124 sa.edit.yahoo.com
+#76.13.6.132 row.bc.yahoo.com
+#66.163.168.247 open.login.yahoo.com
+#209.191.92.114 login.yahoo.com
+#209.191.92.115 edit.yahoo.com
+#209.191.121.31 up.flickr.com
+#209.191.105.102 adjax.flickr.yahoo.com
+#204.0.5.35 content.yieldmanager.edgesuite.net
+#76.13.6.132 us.bc.yahoo.com
+#204.0.5.34 us.js2.yimg.com
+#Flickr END
+
+#adobe
+0.0.0.0	3dns-2.adobe.com
+0.0.0.0	3dns-3.adobe.com
+0.0.0.0	activate.adobe.com
+0.0.0.0	activate-sea.adobe.com
+0.0.0.0	activate-sjc0.adobe.com
+0.0.0.0	adobe-dns.adobe.com
+0.0.0.0	adobe-dns-2.adobe.com
+0.0.0.0	adobe-dns-3.adobe.com
+0.0.0.0	ereg.adobe.com
+0.0.0.0	hl2rcv.adobe.com
+0.0.0.0	practivate.adobe.com
+0.0.0.0	wip3.adobe.com
+0.0.0.0	activate.wip3.adobe.com
+0.0.0.0	ereg.wip3.adobe.com
+0.0.0.0	wwis-dubc1-vip60.adobe.com
+#adobe
+
+# <== From GoogleCode
+
+
+# ==> IPv6
+#Google
+#2001:4860:8005::a0
+2404:6800:8005::68 www.google.com
+2404:6800:8005::84 www.googleusercontent.com
+2404:6800:8005::84 clients1.googleusercontent.com
+2404:6800:8005::84 clients2.googleusercontent.com
+2404:6800:8005::84 webcache.googleusercontent.com #???????
+2404:6800:8005::84 lh0.googleusercontent.com
+2404:6800:8005::84 lh1.googleusercontent.com
+2404:6800:8005::84 lh2.googleusercontent.com
+2404:6800:8005::84 lh3.googleusercontent.com
+2404:6800:8005::84 lh4.googleusercontent.com
+2404:6800:8005::84 lh5.googleusercontent.com
+2404:6800:8005::84 lh6.googleusercontent.com
+2404:6800:8005::84 lh1.ggpht.com
+2404:6800:8005::84 lh2.ggpht.com
+2404:6800:8005::84 lh3.ggpht.com
+2404:6800:8005::84 lh4.ggpht.com
+2404:6800:8005::84 lh5.ggpht.com
+2404:6800:8005::84 lh6.ggpht.com
+
+#Google+
+2404:6800:8005::71 profiles.google.com
+2404:6800:8005::8a plus.google.com
+2404:6800:8005::65 plusone.google.com
+2404:6800:8005::62 talkgadget.google.com
+
+#Photo/Picasa
+2404:6800:8005::5d photos.google.com
+2404:6800:8005::63 picasa.google.com
+2404:6800:8005::be picasaweb.google.com
+
+#Google Docs
+2404:6800:8005::71 docs.google.com
+2404:6800:8005::64 docs0.google.com
+2404:6800:8005::64 docs1.google.com
+2404:6800:8005::64 docs2.google.com
+2404:6800:8005::64 docs3.google.com
+2404:6800:8005::64 docs4.google.com
+2404:6800:8005::64 docs5.google.com
+2404:6800:8005::64 docs6.google.com
+2404:6800:8005::64 docs7.google.com
+2404:6800:8005::64 docs8.google.com
+2404:6800:8005::64 docs9.google.com
+2404:6800:8001::bd 0.docs.google.com
+2404:6800:8001::bd 1.docs.google.com
+2404:6800:8001::bd 2.docs.google.com
+2404:6800:8001::bd 3.docs.google.com
+2404:6800:8001::bd 4.docs.google.com
+2404:6800:8001::bd 5.docs.google.com
+2404:6800:8001::bd 6.docs.google.com
+2404:6800:8001::bd 7.docs.google.com
+2404:6800:8001::bd 8.docs.google.com
+2404:6800:8001::bd 9.docs.google.com
+74.125.71.18 spreadsheets.google.com
+74.125.71.18 writely.google.com
+74.125.71.18 writely.l.google.com
+74.125.71.18 writely-china.l.google.com
+
+#Google Bloger
+2404:6800:8005::63 blogsearch.google.com
+2404:6800:8005::bf www.blogger.com
+2404:6800:8005::bf blogger.com
+2404:6800:8005::bf buttons.blogger.com
+2404:6800:8005::bf beta.blogger.com
+2404:6800:8005::bf draft.blogger.com #Blogger ??????
+2404:6800:8005::bf status.blogger.com #Blogger ??
+2404:6800:8005::bf help.blogger.com #???????
+2404:6800:8005::bf buzz.blogger.com #Blogger Buzz????
+2404:6800:8005::bf photos1.blogger.com
+2404:6800:8005::bf bp0.blogger.com
+2404:6800:8005::bf bp1.blogger.com
+2404:6800:8005::bf bp2.blogger.com
+
+#Maps ???
+74.125.71.18  maps.google.com
+2404:6800:8005::68 maps.google.com #???
+2404:6800:8005::68 local.google.com
+2404:6800:8005::68 ditu.google.com #?§Û?—¤????
+2404:6800:8005::68 maps.l.google.com
+2404:6800:8005::64 maps-api-ssl.google.com
+2404:6800:8005::8a khms.google.com #?????
+2404:6800:8005::8a khms0.google.com
+2404:6800:8005::8a khms1.google.com
+2404:6800:8005::8a khms2.google.com
+2404:6800:8005::8a khms3.google.com
+2404:6800:8005::66 cbks0.google.com
+2404:6800:8005::66 cbks1.google.com
+2404:6800:8005::66 cbks2.google.com
+2404:6800:8005::66 cbks3.google.com
+2404:6800:8005::71 mts.google.com #?????
+2404:6800:8005::71 mts0.google.com
+2404:6800:8005::71 mts1.google.com
+2404:6800:8005::71 mts2.google.com
+2404:6800:8005::71 mts3.google.com
+
+#Reader ?????
+2404:6800:8005::68 reader.google.com
+#Books ???
+2404:6800:8005::62 books.google.com
+#Images ??
+2404:6800:8005::68 images.google.com
+#News ???
+2404:6800:8005::68 news.google.com
+#Group ???
+2404:6800:8005::62 groups.google.com
+#Knol ?????????
+2404:6800:8005::65 knol.google.com
+#Health ????
+2404:6800:8005::66 health.google.com
+#Calendar ????
+2404:6800:8005::64 calendar.google.com
+#Checkout ???
+2404:6800:8005::73 checkout.google.com
+#Chrome ????????
+2404:6800:8005::64 chrome.google.com
+#Download ????
+2404:6800:8005::5b dl.google.com
+2404:6800:8005::5d dl.l.google.com
+2404:6800:8005::88 dl-ssl.google.com
+
+#Code ????
+2404:6800:8005::64 code.google.com
+2404:6800:8005::64 code.l.google.com
+2404:6800:8005::52 *.googlecode.com
+2404:6800:8005::52 googlecode.l.google.com
+2404:6800:8005::52 chromium.googlecode.com
+2404:6800:8005::52 closure-library.googlecode.com
+2404:6800:8005::52 earth-api-samples.googlecode.com
+2404:6800:8005::52 gmaps-samples-flash.googlecode.com
+2404:6800:8005::52 google-code-feed-gadget.googlecode.com
+# <== IPv6
+# <== Google
+
+
+# ==> Others
+#188.92.145.8       wuala.com
+#188.92.145.8       content.wuala.com
+#213.239.242.214    content9.wuala.com
+#213.239.242.214    content10.wuala.com
+#213.239.242.214    content11.wuala.com
+#188.40.118.147     content12.wuala.com
+#188.92.145.8       *.wuala.com
+# <== Others
+
+#Fuck GFW - AstroProfundis
+ 
