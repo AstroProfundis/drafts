@@ -1,0 +1,93 @@
+# This hosts file is for costumized dnsmasq service
+# It is specificaly modified for users in China Mainland
+# For personal uses, some private hosts is added
+# Many thanks to SmartHosts project on Google Code
+#
+# CopyRight (R) 2012 AstroProfundis. Some Rights Reserved.
+
+
+# Costum - AstroProfundis
+50.6.132.222      t.co
+50.6.132.222      www.t.co
+
+
+#Fuck GFW - AstroProfundis
+
+# ==> Google
+# 203.208.45.1-8 16-39 62 65-72 80-103
+# 74.125.236.128-143
+# 74.125.71.* - not confirmed yet
+# 72.14.*.* - no ssl - 2012.01.30
+
+
+#Google
+
+
+#Pics START
+
+#Pics END
+
+
+#Flickr START
+
+#Flickr END
+
+#adobe
+0.0.0.0	3dns-2.adobe.com
+0.0.0.0	3dns-3.adobe.com
+0.0.0.0	activate.adobe.com
+0.0.0.0	activate-sea.adobe.com
+0.0.0.0	activate-sjc0.adobe.com
+0.0.0.0	adobe-dns.adobe.com
+0.0.0.0	adobe-dns-2.adobe.com
+0.0.0.0	adobe-dns-3.adobe.com
+0.0.0.0	ereg.adobe.com
+0.0.0.0	hl2rcv.adobe.com
+0.0.0.0	practivate.adobe.com
+0.0.0.0	wip3.adobe.com
+0.0.0.0	activate.wip3.adobe.com
+0.0.0.0	ereg.wip3.adobe.com
+0.0.0.0	wwis-dubc1-vip60.adobe.com
+#adobe
+
+# <== From GoogleCode
+
+
+# ==> IPv6
+#Google
+#2001:4860:8005::a0
+
+
+#Google+
+
+
+#Photo/Picasa
+
+
+#Google Docs
+
+
+#Google Bloger
+
+
+#Maps ???
+
+
+#Code ????
+
+# <== IPv6
+# <== Google
+
+
+# ==> Others
+#188.92.145.8       wuala.com
+#188.92.145.8       content.wuala.com
+#213.239.242.214    content9.wuala.com
+#213.239.242.214    content10.wuala.com
+#213.239.242.214    content11.wuala.com
+#188.40.118.147     content12.wuala.com
+#188.92.145.8       *.wuala.com
+# <== Others
+
+#Fuck GFW - AstroProfundis
+ 
