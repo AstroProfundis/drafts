@@ -19,5 +19,7 @@ options {
         listen-on port 53 { any; };
         listen-on port 233 { any; };
         listen-on port 4321 { any; };
-        listen-on-v6 { any; };
+        listen-on-v6 port 53 { any; };
+        listen-on-v6 port 233 { any; };
+        listen-on-v6 port 4321 { any; };
 };
