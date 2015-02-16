@@ -2,7 +2,7 @@
 "
 " Original Maintainer:	Bram Moolenaar <Bram@vim.org>
 " Present Maintainer:   Allen Zhong <allenZ@mail.atr.me>
-" Last change:	2012 Sep 28
+" Last change:	2015 Feb 16
 "
 " To use it, copy it to
 "     for Unix and OS/2:  ~/.vimrc
@@ -17,6 +17,7 @@ set autoindent
 set smartindent
 "set cindent
 set smarttab
+set tabstop=4
 " When started as "evim", evim.vim will already have done these settings.
 if v:progname =~? "evim"
   finish
