@@ -14,10 +14,12 @@ set encoding=UTF-8
 set fileencodings=UTF-8,GBK,GB18030
 set formatoptions=tcrqn
 set autoindent
-set smartindent
 "set cindent
 set smarttab
+filetype plugin indent on
 set tabstop=4
+set shiftwidth=4
+set expandtab
 " When started as "evim", evim.vim will already have done these settings.
 if v:progname =~? "evim"
   finish
