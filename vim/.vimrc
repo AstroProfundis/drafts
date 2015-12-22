@@ -14,7 +14,7 @@ call pathogen#infect()
 call pathogen#helptags()
 
 set encoding=UTF-8
-set fileencodings=UTF-8,GBK,GB18030
+set fileencodings=utf-8,gb2312,gb18030,gbk,ucs-bom,cp936,latin1
 set formatoptions=tcrqn
 set autoindent
 "set cindent
@@ -64,9 +64,15 @@ inoremap <C-U> <C-G>u<C-U>
 
 " Switch syntax highlighting on, when the terminal has colors
 " Also switch on highlighting the last used search pattern.
+syntax on
+set hlsearch
 if &t_Co > 2 || has("gui_running")
-  syntax on
-  set hlsearch
+  "set background=light
+  "colorscheme solarized
+  color dracula
+else
+  set background=dark
+  colorscheme solarized
 endif
 
 " Only do this part when compiled with support for autocommands.
