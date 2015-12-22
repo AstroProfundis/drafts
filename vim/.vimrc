@@ -10,6 +10,9 @@
 "  for MS-DOS and Win32:  $VIM\_vimrc
 "	    for OpenVMS:  sys$login:.vimrc
 
+call pathogen#infect()
+call pathogen#helptags()
+
 set encoding=UTF-8
 set fileencodings=UTF-8,GBK,GB18030
 set formatoptions=tcrqn
