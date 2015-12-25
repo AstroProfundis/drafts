@@ -66,13 +66,12 @@ inoremap <C-U> <C-G>u<C-U>
 " Also switch on highlighting the last used search pattern.
 syntax on
 set hlsearch
-if &t_Co > 2 || has("gui_running")
-  "set background=light
-  "colorscheme solarized
+if has("gui_running")
+  set background=light
   color dracula
-else
+elseif &t_Co > 2
   set background=dark
-  colorscheme solarized
+  color solarized
 endif
 
 " Only do this part when compiled with support for autocommands.
