@@ -64,14 +64,17 @@ inoremap <C-U> <C-G>u<C-U>
 
 " Switch syntax highlighting on, when the terminal has colors
 " Also switch on highlighting the last used search pattern.
+let python_highlight_all = 1
+
 syntax on
 set hlsearch
 if has("gui_running")
   set background=light
   color dracula
 elseif &t_Co > 2
+  set t_Co=256
   set background=dark
-  color solarized
+  color atr
 endif
 
 " Only do this part when compiled with support for autocommands.
@@ -143,4 +146,3 @@ endif
   "nmap <C-W><C-F> :FirstExplorerWindow<cr>
   "nmap <C-W><C-B> :BottomExplorerWindow<cr>
   "autocmd BufWinEnter \[Buf\ List\] setl nonumber
-
