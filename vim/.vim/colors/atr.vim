@@ -36,26 +36,26 @@ if exists("b:current_syntax")
 endif
 
 " General colors
-hi Normal	guifg=#eeeeee	ctermfg=255	guibg=#111111	ctermbg=232	gui=none
+hi Normal	guifg=#eeeeee	ctermfg=255	guibg=#121212	ctermbg=232 gui=none
 hi Cursor	guifg=none	guibg=#bbddee	ctermbg=153	gui=none
 hi MatchParen	guibg=#5566aa	ctermbg=61
 
 " UI colors
 hi ErrorMsg	guifg=#000000	ctermfg=0	guibg=#ffcc88	ctermbg=222	gui=bold
-hi Folded	guifg=#8888ff	ctermfg=105	guibg=#333333	ctermbg=236	gui=bold
-hi FoldColumn	guifg=#8888ff	ctermfg=105	guibg=#333333	ctermbg=236	gui=bold
-hi NonText	guifg=#888888	ctermfg=102	guibg=#333333	ctermbg=236	gui=none
+hi Folded	guifg=#8888ff	ctermfg=105	guibg=#121212	ctermbg=232	gui=bold
+hi FoldColumn	guifg=#8888ff	ctermfg=105	guibg=#121212	ctermbg=232	gui=bold
+hi NonText	guifg=#888888	ctermfg=102	guibg=#121212	ctermbg=232	gui=none
 hi Search	guifg=#6600aa	ctermfg=55	guibg=#ddbbee	ctermbg=183	gui=underline
 hi IncSearch ctermfg=235 ctermbg=186 cterm=none guifg=#272822 guibg=#e6db74 gui=none
 hi SpellBad	guisp=#bb5555
 hi SpellCap	guisp=#5555bb
 hi SpellRare	guisp=#bb55bb
-hi SpellLocal	ctermfg=233 guifg=#121212 guisp=#55bbbb
+hi SpellLocal	ctermfg=232 guifg=#121212 guisp=#55bbbb
 hi LineNr	guifg=#bbbb88	ctermfg=144
 hi CursorLineNr	guifg=#eeff88	ctermfg=228	gui=bold
 hi CursorLine	guibg=#444444	ctermbg=238
 hi CursorColumn	guibg=#444444	ctermbg=238
-hi Visual	guibg=#333333	ctermbg=236
+hi Visual	guibg=#444444	ctermbg=238
 hi Pmenu	guifg=#221133	ctermfg=235	guibg=#ddbbee	ctermbg=183
 hi PmenuSbar ctermbg=238
 hi PmenuSel	guifg=#ddbbee	ctermfg=183	guibg=#221133	ctermbg=235
@@ -93,8 +93,8 @@ hi Define ctermfg=167 ctermbg=none cterm=none guifg=#dc7373 guibg=none gui=none
 
 hi Underlined	guifg=#88aaff	ctermfg=111	gui=underline
 
-hi DiffAdd	guifg=#90ff99	ctermfg=120	guibg=#111111 ctermbg=232 gui=none
-hi DiffDelete	guifg=#d70000	ctermfg=160	guibg=#111111 ctermbg=232 gui=none
+hi DiffAdd	guifg=#90ff99	ctermfg=120	guibg=#121212 ctermbg=232 gui=none
+hi DiffDelete	guifg=#d70000	ctermfg=160	guibg=#121212 ctermbg=232 gui=none
 hi DiffChange	guibg=#334455	ctermbg=238	gui=none
 hi DiffText	guibg=#334455	ctermbg=238	gui=none
 
