@@ -84,6 +84,16 @@ let python_highlight_indent_errors = 1
 let python_highlight_space_errors = 1
 let python_highlight_file_headers_as_comments = 1
 
+function! PhpSyntaxOverride()
+  hi! def link phpDocTags  phpDefine
+  hi! def link phpDocParam phpType
+endfunction
+
+augroup phpSyntaxOverride
+  autocmd!
+  autocmd FileType php call PhpSyntaxOverride()
+augroup END
+
 " Status line
 set laststatus=2
 let g:lightline = {
