@@ -152,3 +152,8 @@ endif
   "nmap <C-W><C-F> :FirstExplorerWindow<cr>
   "nmap <C-W><C-B> :BottomExplorerWindow<cr>
   "autocmd BufWinEnter \[Buf\ List\] setl nonumber
+if has("autocmd")
+    autocmd StdinReadPre * let s:std_in=1
+    "autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
+    autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
+endif
