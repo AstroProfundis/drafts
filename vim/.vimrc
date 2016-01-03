@@ -70,9 +70,37 @@ if has("gui_running")
   set background=light
   color dracula
 elseif &t_Co > 2
+  set t_Co=256
   set background=dark
-  color solarized
+  color atr
 endif
+
+let python_version_2 = 1
+let python_highlight_all = 1
+let python_highlight_builtins = 1
+let python_highlight_exceptions = 1
+let python_print_as_function = 1
+let python_highlight_indent_errors = 1
+let python_highlight_space_errors = 1
+let python_highlight_file_headers_as_comments = 1
+
+let g:cpp_class_scope_highlight = 1
+
+function! PhpSyntaxOverride()
+  hi! def link phpDocTags  phpDefine
+  hi! def link phpDocParam phpType
+endfunction
+
+augroup phpSyntaxOverride
+  autocmd!
+  autocmd FileType php call PhpSyntaxOverride()
+augroup END
+
+" Status line
+set laststatus=2
+let g:lightline = {
+      \ 'colorscheme': 'jellybeans',
+      \ }
 
 " Only do this part when compiled with support for autocommands.
 if has("autocmd")
@@ -143,4 +171,8 @@ endif
   "nmap <C-W><C-F> :FirstExplorerWindow<cr>
   "nmap <C-W><C-B> :BottomExplorerWindow<cr>
   "autocmd BufWinEnter \[Buf\ List\] setl nonumber
-
+if has("autocmd")
+    autocmd StdinReadPre * let s:std_in=1
+    "autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
+    autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
+endif

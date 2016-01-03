@@ -1,3 +1,27 @@
+[submodule "vim/.vim/bundle/lightline.vim"]
+	path = vim/.vim/bundle/lightline.vim
+	url = https://github.com/itchyny/lightline.vim
 [submodule "vim/.vim/bundle/vim-colors-solarized"]
 	path = vim/.vim/bundle/vim-colors-solarized
-	url = https://github.com/altercation/vim-colors-solarized.git
+	url = git://github.com/altercation/vim-colors-solarized.git
+[submodule "vim/.vim/bundle/sh.vim"]
+	path = vim/.vim/bundle/sh.vim
+	url = https://github.com/vim-scripts/sh.vim--Cla.git
+[submodule "vim/.vim/bundle/terminus"]
+	path = vim/.vim/bundle/terminus
+	url = https://github.com/wincent/terminus.git
+[submodule "vim/.vim/bundle/nerdtree"]
+	path = vim/.vim/bundle/nerdtree
+	url = https://github.com/scrooloose/nerdtree.git
+[submodule "vim/.vim/bundle/vim-perl"]
+	path = vim/.vim/bundle/vim-perl
+	url = https://github.com/vim-perl/vim-perl.git
+[submodule "vim/.vim/bundle/html5.vim"]
+	path = vim/.vim/bundle/html5.vim
+	url = https://github.com/othree/html5.vim.git
+[submodule "vim/.vim/bundle/php.vim"]
+	path = vim/.vim/bundle/php.vim
+	url = https://github.com/StanAngeloff/php.vim.git
+[submodule "vim/.vim/bundle/vim-cpp-enhanced-hightlight"]
+	path = vim/.vim/bundle/vim-cpp-enhanced-hightlight
+	url = https://github.com/octol/vim-cpp-enhanced-highlight.git
