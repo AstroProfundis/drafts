@@ -7,3 +7,6 @@
 [submodule "vim/.vim/bundle/sh.vim"]
 	path = vim/.vim/bundle/sh.vim
 	url = https://github.com/vim-scripts/sh.vim--Cla.git
+[submodule "vim/.vim/bundle/terminus"]
+	path = vim/.vim/bundle/terminus
+	url = https://github.com/wincent/terminus.git
