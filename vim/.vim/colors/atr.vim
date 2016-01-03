@@ -50,13 +50,14 @@ hi IncSearch ctermfg=235 ctermbg=186 cterm=none guifg=#272822 guibg=#e6db74 gui=
 hi SpellBad	guisp=#bb5555
 hi SpellCap	guisp=#5555bb
 hi SpellRare	guisp=#bb55bb
-hi SpellLocal	guisp=#55bbbb
+hi SpellLocal	ctermfg=233 guifg=#121212 guisp=#55bbbb
 hi LineNr	guifg=#bbbb88	ctermfg=144
 hi CursorLineNr	guifg=#eeee88	ctermfg=228	gui=bold
 hi CursorLine	guibg=#444444	ctermbg=238
 hi CursorColumn	guibg=#444444	ctermbg=238
 hi Visual	guibg=#333333	ctermbg=236
 hi Pmenu	guifg=#221133	ctermfg=235	guibg=#ddbbee	ctermbg=183
+hi PmenuSbar ctermbg=238
 hi PmenuSel	guifg=#ddbbee	ctermfg=183	guibg=#221133	ctermbg=235
 hi SignColumn	guifg=#88ffff	guibg=#333
 hi StatusLine ctermfg=231 ctermbg=241 cterm=bold guifg=#f8f8f2 guibg=#64645e gui=bold
@@ -72,7 +73,7 @@ hi Constant	guifg=#ff87a5	ctermfg=211	gui=none
 hi String	guifg=#70b870	ctermfg=71	gui=italic
 hi Boolean	guifg=#ff9696	ctermfg=217	gui=bold
 
-hi Identifier	guifg=#ff88ff	ctermfg=213	gui=none
+hi Identifier	guifg=#ae81ff	ctermfg=147	gui=none
 hi Function	guifg=#ffdb6e	ctermfg=222	gui=bold
 hi Float ctermfg=211 ctermbg=none cterm=none guifg=#ff87a5 guibg=none gui=none
 hi Label ctermfg=186 ctermbg=none cterm=none guifg=#e6db74 guibg=none gui=none
@@ -91,8 +92,8 @@ hi Define ctermfg=167 ctermbg=none cterm=none guifg=#dc7373 guibg=none gui=none
 
 hi Underlined	guifg=#88aaff	ctermfg=111	gui=underline
 
-hi DiffAdd	guibg=#335544	ctermbg=238	gui=none
-hi DiffDelete	guifg=#443333	ctermfg=237	guibg=#443333	ctermbg=237	gui=none
+hi DiffAdd	guifg=#90ff99	ctermfg=120	guibg=#111111 ctermbg=232 gui=none
+hi DiffDelete	guifg=#d70000	ctermfg=160	guibg=#111111 ctermbg=232 gui=none
 hi DiffChange	guibg=#334455	ctermbg=238	gui=none
 hi DiffText	guibg=#334455	ctermbg=238	gui=none
 
@@ -106,8 +107,6 @@ hi diffNewFile	guifg=#ff9999	ctermfg=210	gui=none
 hi Keyword	guifg=#88ffff	ctermfg=123
 
 "" Languages
-hi pythonDecorator guifg=#afd0ff ctermfg=153
-
 hi htmlTag ctermfg=195 cterm=none guifg=#beffff gui=none
 hi htmlEndTag ctermfg=158 cterm=none guifg=#c9ffc9 gui=none
 hi htmlTagName ctermfg=219 cterm=none guifg=#ffafff gui=none
