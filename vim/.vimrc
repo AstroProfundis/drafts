@@ -64,8 +64,6 @@ inoremap <C-U> <C-G>u<C-U>
 
 " Switch syntax highlighting on, when the terminal has colors
 " Also switch on highlighting the last used search pattern.
-let python_highlight_all = 1
-
 syntax on
 set hlsearch
 if has("gui_running")
@@ -76,6 +74,15 @@ elseif &t_Co > 2
   set background=dark
   color atr
 endif
+
+let python_version_2 = 1
+let python_highlight_all = 1
+let python_highlight_builtins = 1
+let python_highlight_exceptions = 1
+let python_print_as_function = 1
+let python_highlight_indent_errors = 1
+let python_highlight_space_errors = 1
+let python_highlight_file_headers_as_comments = 1
 
 " Status line
 set laststatus=2
