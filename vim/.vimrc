@@ -77,6 +77,12 @@ elseif &t_Co > 2
   color atr
 endif
 
+" Status line
+set laststatus=2
+let g:lightline = {
+      \ 'colorscheme': 'jellybeans',
+      \ }
+
 " Only do this part when compiled with support for autocommands.
 if has("autocmd")
 
