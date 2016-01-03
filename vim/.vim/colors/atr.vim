@@ -52,7 +52,7 @@ hi SpellCap	guisp=#5555bb
 hi SpellRare	guisp=#bb55bb
 hi SpellLocal	ctermfg=233 guifg=#121212 guisp=#55bbbb
 hi LineNr	guifg=#bbbb88	ctermfg=144
-hi CursorLineNr	guifg=#eeee88	ctermfg=228	gui=bold
+hi CursorLineNr	guifg=#eeff88	ctermfg=228	gui=bold
 hi CursorLine	guibg=#444444	ctermbg=238
 hi CursorColumn	guibg=#444444	ctermbg=238
 hi Visual	guibg=#333333	ctermbg=236
@@ -64,6 +64,7 @@ hi StatusLine ctermfg=231 ctermbg=241 cterm=bold guifg=#f8f8f2 guibg=#64645e gui
 hi StatusLineNC ctermfg=231 ctermbg=241 cterm=none guifg=#f8f8f2 guibg=#64645e gui=none
 hi Directory ctermfg=141 ctermbg=none cterm=none guifg=#ae81ff guibg=none gui=none
 hi Folded ctermfg=242 ctermbg=235 cterm=none guifg=#75715e guibg=#272822 gui=none
+hi Title ctermfg=255 cterm=bold guifg=#eeeeee gui=bold
 
 " Syntax highlighting
 hi Comment	guifg=#808080	ctermfg=244	gui=italic
@@ -82,7 +83,7 @@ hi Operator ctermfg=122 ctermbg=none cterm=none guifg=#6effcf guibg=none gui=non
 hi Statement	guifg=#88ccff	ctermfg=117	gui=none
 hi PreProc	guifg=#cc88ff	ctermfg=177	gui=none
 hi Type	guifg=#eeff88	ctermfg=228	gui=none
-hi Special	guifg=#f2ffb0	ctermfg=229	gui=none
+hi Special	guifg=#dadada	ctermfg=253	gui=none
 hi SpecialKey ctermfg=71 ctermbg=237 cterm=none guifg=#70b870 gui=none
 
 hi Todo	guifg=#444444	ctermfg=238	guibg=#999999	ctermbg=246	gui=bold
@@ -112,6 +113,13 @@ hi htmlEndTag ctermfg=158 cterm=none guifg=#c9ffc9 gui=none
 hi htmlTagName ctermfg=219 cterm=none guifg=#ffafff gui=none
 hi htmlArg ctermfg=123 cterm=none guifg=#ff9999 gui=none
 hi htmlSpecialChar ctermfg=147 cterm=none guifg=#ae81ff gui=none
+hi htmlBold cterm=bold gui=bold
+hi htmlItalic cterm=italic gui=italic
+hi htmlUnderline cterm=underline gui=underline
+hi htmlBoldItalic cterm=bold,italic gui=bold,italic
+hi htmlBoldUnderline cterm=bold,underline gui=bold,underline
+hi htmlUnderlineItalic cterm=italic,underline gui=italic,underline
+hi htmlBoldUnderlineItalic cterm=bold,italic,underline gui=bold,italic,underline
 
 hi javaScriptFunction ctermfg=222 cterm=none guifg=#ffdb6e gui=italic
 hi javaScriptRailsFunction ctermfg=222 cterm=none guifg=#ffdb6e gui=none
