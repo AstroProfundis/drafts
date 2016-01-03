@@ -22,3 +22,6 @@
 [submodule "vim/.vim/bundle/php.vim"]
 	path = vim/.vim/bundle/php.vim
 	url = https://github.com/StanAngeloff/php.vim.git
+[submodule "vim/.vim/bundle/vim-cpp-enhanced-hightlight"]
+	path = vim/.vim/bundle/vim-cpp-enhanced-hightlight
+	url = https://github.com/octol/vim-cpp-enhanced-highlight.git
