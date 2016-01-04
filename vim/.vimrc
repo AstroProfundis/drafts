@@ -18,7 +18,7 @@ call pathogen#infect()
 call pathogen#helptags()
 
 set encoding=UTF-8
-set fileencodings=utf-8,gb2312,gb18030,gbk,ucs-bom,cp936,latin1
+set fileencodings=ucs-bom,utf-8,gb2312,gb18030,gbk,cp936,euc-jp,euc-kr,latin1
 set formatoptions=tcrqn
 set autoindent
 set smarttab
@@ -87,6 +87,7 @@ map <silent> <leader>V :source ~/.vimrc<CR>:filetype detect<CR>:exe ":echo 'vimr
 " Also switch on highlighting the last used search pattern.
 syntax enable
 set hlsearch
+
 if has("gui_running")
   set background=light
   color dracula
@@ -120,8 +121,25 @@ augroup END
 " Status line
 set laststatus=2
 let g:lightline = {
-      \ 'colorscheme': 'jellybeans',
-      \ }
+    \  'colorscheme': 'jellybeans',
+    \  'active': {
+    \    'left': [['mode', 'paste', 'readonly'],
+    \             ['fugitive', 'filename', 'modified']],
+    \    'right': [['lineinfo'],
+    \              ['formatops', 'percent'],
+    \              ['fileformat', 'fileencoding', 'filetype']]
+    \  },
+    \  'component': {
+    \    'modified': '%{&filetype=="help"?"":&modified?"+":&modifiable?"":"-"}',
+    \    'fugitive': '%{exists("*fugitive#head")?fugitive#head():""}',
+    \    'formatops': '%{&fo}'
+    \   },
+    \  'component_visible_condition': {
+    \    'readonly': '(&filetype!="help"&& &readonly)',
+    \    'modified': '(&filetype!="help"&&(&modified||!&modifiable))',
+    \    'fugitive': '(exists("*fugitive#head") && ""!=fugitive#head())',
+    \  }
+    \ }
 
 " Only do this part when compiled with support for autocommands.
 if has("autocmd")
