@@ -2,7 +2,7 @@
 compiler fish
 
 " Set this to have long lines wrap inside comments.
-setlocal textwidth=79
+setlocal textwidth=80
 
 " Enable folding of block structures in fish.
 setlocal foldmethod=expr
