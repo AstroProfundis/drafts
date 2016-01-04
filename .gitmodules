@@ -37,3 +37,6 @@
 [submodule "vim/.vim/bundle/syntastic"]
 	path = vim/.vim/bundle/syntastic
 	url = https://github.com/scrooloose/syntastic.git
+[submodule "vim/.vim/bundle/acp"]
+	path = vim/.vim/bundle/acp
+	url = https://github.com/eikenb/acp.git
