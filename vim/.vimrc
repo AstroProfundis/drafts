@@ -46,6 +46,12 @@ set incsearch		" do incremental searching
 set wrapscan
 set number
 
+" Visualize tabs, trailing whitespaces and funny characters
+" http://www.reddit.com/r/programming/comments/9wlb7/proggitors_do_you_like_the_idea_of_indented/c0esam1
+" https://wincent.com/blog/making-vim-highlight-suspicious-characters
+set list
+set listchars=nbsp:¬,tab:»·,trail:·
+
 " For Win32 GUI: remove 't' flag from 'guioptions': no tearoff menu entries
 " let &guioptions = substitute(&guioptions, "t", "", "g")
 
@@ -86,7 +92,12 @@ map <silent> <leader>V :source ~/.vimrc<CR>:filetype detect<CR>:exe ":echo 'vimr
 " Switch syntax highlighting on, when the terminal has colors
 " Also switch on highlighting the last used search pattern.
 syntax enable
+
+" Highlight search results
 set hlsearch
+
+" Makes search act like search in modern browsers
+set incsearch
 
 if has("gui_running")
   set background=light
@@ -96,6 +107,16 @@ elseif &t_Co > 2
   set background=dark
   color atr
 endif
+
+" Set 7 lines to the cursor - when moving vertically using j/k
+set scrolloff=7
+set sidescrolloff=15
+set sidescroll=1
+
+" No annoying sound on errors
+set noerrorbells
+set novisualbell
+set timeoutlen=500
 
 " Cursor Highlighting
 " Ref: https://gist.github.com/pera/2624765#gistcomment-1277417
