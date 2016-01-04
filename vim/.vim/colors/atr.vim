@@ -7,7 +7,7 @@
 " https://github.com/gerw/vim-HiLinkTrace
 " Forked from felipec
 
-if &t_Co != 256 && ! has("    gui_running")
+if &t_Co != 256 && ! has("gui_running")
   echomsg "err: please use GUI or a 256-color terminal (so that t_Co=256 could be set)"
   finish
 endif
@@ -53,8 +53,8 @@ hi SpellRare    guisp=#bb55bb
 hi SpellLocal    ctermfg=232    guifg=#121212    guisp=#55bbbb
 hi LineNr    guifg=#bbbb88    ctermfg=144
 hi CursorLineNr    guifg=#eeff88    ctermfg=228    gui=bold
-hi CursorLine    guibg=#444444    ctermbg=238
-hi CursorColumn    guibg=#444444    ctermbg=238
+hi CursorLine    guibg=#232323    ctermbg=235    cterm=none
+hi CursorColumn    guibg=#232323    ctermbg=235
 hi Visual    guibg=#444444    ctermbg=238
 hi Pmenu    guifg=#221133    ctermfg=235    guibg=#ddbbee    ctermbg=183
 hi PmenuSbar    ctermbg=238
