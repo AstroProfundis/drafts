@@ -10,6 +10,10 @@
 "  for MS-DOS and Win32:  $VIM\_vimrc
 "	    for OpenVMS:  sys$login:.vimrc
 
+" Use Vim settings, rather than Vi settings (much better!).
+" This must be first, because it changes other options as a side effect.
+set nocompatible
+
 call pathogen#infect()
 call pathogen#helptags()
 
@@ -17,7 +21,6 @@ set encoding=UTF-8
 set fileencodings=utf-8,gb2312,gb18030,gbk,ucs-bom,cp936,latin1
 set formatoptions=tcrqn
 set autoindent
-"set cindent
 set smarttab
 filetype plugin indent on
 set tabstop=4
@@ -27,10 +30,6 @@ set expandtab
 if v:progname =~? "evim"
   finish
 endif
-
-" Use Vim settings, rather than Vi settings (much better!).
-" This must be first, because it changes other options as a side effect.
-set nocompatible
 
 " allow backspacing over everything in insert mode
 set backspace=indent,eol,start
@@ -58,9 +57,31 @@ map Q gq
 inoremap <C-U> <C-G>u<C-U>
 
 " In many terminal emulators the mouse works just fine, thus enable it.
-"if has('mouse')
-"  set mouse=a
-"endif
+if has('mouse')
+  set mouse=a
+endif
+if exists('$TMUX')  " Support resizing in tmux
+  set ttymouse=xterm2
+endif
+
+" keyboard shortcuts
+let mapleader = ','
+map <C-h> <C-w>h
+map <C-j> <C-w>j
+map <C-k> <C-w>k
+map <C-l> <C-w>l
+map <leader>l :Align
+nmap <leader>a :Ack
+nmap <leader>b :CtrlPBuffer<CR>
+nmap <leader>d :NERDTreeToggle<CR>
+nmap <leader>f :NERDTreeFind<CR>
+nmap <leader>t :CtrlP<CR>
+nmap <leader>T :CtrlPClearCache<CR>:CtrlP<CR><CR>
+nmap <leader>] :TagbarToggle<CR>
+nmap <leader><space> :call whitespace#strip_trailing()<CR>
+nmap <leader>g :GitGutterToggle<CR>
+nmap <leader>c <Plug>Kwbd
+map <silent> <leader>V :source ~/.vimrc<CR>:filetype detect<CR>:exe ":echo 'vimrc reloaded'"<CR>
 
 " Switch syntax highlighting on, when the terminal has colors
 " Also switch on highlighting the last used search pattern.
@@ -153,26 +174,39 @@ if !exists(":DiffOrig")
 endif
 
 " winmanager   
-  let g:NERDTree_title = "[NERDTree]"
-  function! NERDTree_Start()
-      exe 'NERDTree'
-  endfunction
-  function! NERDTree_IsValid()
-      return 1
-  endfunction
+let g:NERDTree_title = "[NERDTree]"
+let g:NERDSpaceDelims = 1
+function! NERDTree_Start()
+  exe 'NERDTree'
+endfunction
+function! NERDTree_IsValid()
+  return 1
+endfunction
 
-  let g:winManagerWindowLayout = 'NERDTree'
-  "let g:winManagerWindowLayout='NERDTree|BufExplorer'
-  "let g:winManagerWindowLayout = 'FileExplorer|TagList'
-  "let g:winManagerWindowLayout = 'FileExplorer'
-  let g:winManagerWidth = 25
-  let g:defaultExplorer = 1
-  nmap wm :WMToggle<cr>
-  "nmap <C-W><C-F> :FirstExplorerWindow<cr>
-  "nmap <C-W><C-B> :BottomExplorerWindow<cr>
-  "autocmd BufWinEnter \[Buf\ List\] setl nonumber
+let g:winManagerWindowLayout = 'NERDTree'
+"let g:winManagerWindowLayout='NERDTree|BufExplorer'
+"let g:winManagerWindowLayout = 'FileExplorer|TagList'
+"let g:winManagerWindowLayout = 'FileExplorer'
+let g:winManagerWidth = 25
+let g:defaultExplorer = 1
+nmap wm :WMToggle<cr>
+"nmap <C-W><C-F> :FirstExplorerWindow<cr>
+"nmap <C-W><C-B> :BottomExplorerWindow<cr>
+"autocmd BufWinEnter \[Buf\ List\] setl nonumber
+
 if has("autocmd")
-    autocmd StdinReadPre * let s:std_in=1
-    "autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
-    autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
+  autocmd StdinReadPre * let s:std_in=1
+  "autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
+  autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
+  " automatically rebalance windows on vim resize
+  autocmd VimResized * :wincmd =
+endif
+
+" Fix Cursor in TMUX
+if exists('$TMUX')
+  let &t_SI = "\<Esc>Ptmux;\<Esc>\<Esc>]50;CursorShape=1\x7\<Esc>\\"
+  let &t_EI = "\<Esc>Ptmux;\<Esc>\<Esc>]50;CursorShape=0\x7\<Esc>\\"
+else
+  let &t_SI = "\<Esc>]50;CursorShape=1\x7"
+  let &t_EI = "\<Esc>]50;CursorShape=0\x7"
 endif
