@@ -109,7 +109,7 @@ au CursorHoldI * call BoostMoveOFF()
 
 function BoostMoveON()
     if (g:boostmove == 0)
-        set updatetime=100
+        set updatetime=200
         let g:boostmove = 1
         setlocal nocursorline
         setlocal nocursorcolumn
