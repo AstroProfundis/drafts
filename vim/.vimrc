@@ -97,6 +97,34 @@ elseif &t_Co > 2
   color atr
 endif
 
+" Cursor Highlighting
+" Ref: https://gist.github.com/pera/2624765#gistcomment-1277417
+
+set updatetime=3000
+let g:boostmove = 0
+au CursorMoved * call BoostMoveON()
+au CursorMovedI * call BoostMoveON()
+au CursorHold * call BoostMoveOFF()
+au CursorHoldI * call BoostMoveOFF()
+
+function BoostMoveON()
+    if (g:boostmove == 0)
+        set updatetime=100
+        let g:boostmove = 1
+        setlocal nocursorline
+        setlocal nocursorcolumn
+    endif
+endfunction
+
+function BoostMoveOFF()
+    if g:boostmove == 1
+        set updatetime=3000
+        let g:boostmove = 0
+        setlocal cursorline
+        setlocal cursorcolumn
+    endif
+endfunction
+
 let python_version_2 = 1
 let python_highlight_all = 1
 let python_highlight_builtins = 1
