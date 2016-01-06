@@ -111,11 +111,14 @@ set incsearch
 
 if has("gui_running")
   set background=light
-  color dracula
+  color atr
 elseif &t_Co > 2
   set t_Co=256
   set background=dark
   color atr
+else
+  set background=dark
+  color solarized
 endif
 
 " Set 7 lines to the cursor - when moving vertically using j/k
