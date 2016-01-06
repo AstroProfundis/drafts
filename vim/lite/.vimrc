@@ -1,14 +1,13 @@
 " An example for a vimrc file.
 "
-" Original Maintainer:	Bram Moolenaar <Bram@vim.org>
+" Original Maintainer:  Bram Moolenaar <Bram@vim.org>
 " Present Maintainer:   Allen Zhong <allenZ@mail.atr.me>
-" Last change:	2015 Feb 16
 "
 " To use it, copy it to
-"     for Unix and OS/2:  ~/.vimrc
-"	      for Amiga:  s:.vimrc
-"  for MS-DOS and Win32:  $VIM\_vimrc
-"	    for OpenVMS:  sys$login:.vimrc
+"     for Unix and OS/2:    ~/.vimrc
+"     for Amiga:            s:.vimrc
+"     for MS-DOS and Win32: $VIM\_vimrc
+"     for OpenVMS:          sys$login:.vimrc
 
 " Use Vim settings, rather than Vi settings (much better!).
 " This must be first, because it changes other options as a side effect.
@@ -17,7 +16,6 @@ set nocompatible
 set encoding=UTF-8
 set fileencodings=ucs-bom,utf-8,gb2312,gb18030,gbk,cp936,euc-jp,euc-kr,latin1
 set formatoptions=tcrqn
-set autoindent
 set smarttab
 filetype plugin indent on
 set tabstop=4
@@ -32,14 +30,14 @@ endif
 set backspace=indent,eol,start
 
 if has("vms")
-  set nobackup		" do not keep a backup file, use versions instead
+  set nobackup " do not keep a backup file, use versions instead
 else
-  set backupdir=~/.vim/backup,/tmp		" keep a backup file
+  set backupdir=~/.vim/backup,/tmp " keep a backup file
 endif
-set history=80		" keep 50 lines of command line history
-set ruler		" show the cursor position all the time
-set showcmd		" display incomplete commands
-set incsearch		" do incremental searching
+set history=80 " keep 50 lines of command line history
+set ruler " show the cursor position all the time
+set showcmd " display incomplete commands
+set incsearch " do incremental searching
 set wrapscan
 set number
 
@@ -174,9 +172,7 @@ if has("autocmd")
   augroup END
 
 else
-
-  set autoindent		" always set autoindenting on
-
+  set autoindent " always set autoindenting on
 endif " has("autocmd")
 
 " Convenient command to see the difference between the current buffer and the
@@ -184,7 +180,7 @@ endif " has("autocmd")
 " Only define it when not defined already.
 if !exists(":DiffOrig")
   command DiffOrig vert new | set bt=nofile | r ++edit # | 0d_ | diffthis
-		  \ | wincmd p | diffthis
+          \ | wincmd p | diffthis
 endif
 
 " Fix Cursor in TMUX
