@@ -18,6 +18,8 @@ call pathogen#helptags()
 
 set encoding=UTF-8
 set fileencodings=ucs-bom,utf-8,gb2312,gb18030,gbk,cp936,euc-jp,euc-kr,latin1
+" Use Unix as the standard file type
+set ffs=unix,dos,mac
 set formatoptions=tcrqn
 set smarttab
 filetype plugin indent on
@@ -49,6 +51,9 @@ set number
 " https://wincent.com/blog/making-vim-highlight-suspicious-characters
 set list
 set listchars=nbsp:¬,trail:$,tab:>-,extends:»,precedes:«
+
+" Don't redraw while executing macros (good performance config)
+set lazyredraw
 
 " For Win32 GUI: remove 't' flag from 'guioptions': no tearoff menu entries
 " let &guioptions = substitute(&guioptions, "t", "", "g")
