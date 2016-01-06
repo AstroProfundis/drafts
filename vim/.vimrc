@@ -42,9 +42,12 @@ endif
 set history=80 " keep 50 lines of command line history
 set ruler " show the cursor position all the time
 set showcmd " display incomplete commands
-set incsearch " do incremental searching
 set wrapscan
+set linespace=0 " No extra spaces between rows
 set number
+set ignorecase " Case insensitive search
+set smartcase " Case sensitive when uc present
+set pastetoggle=<F12> " pastetoggle (sane indentation on pastes)
 
 " Visualize tabs, trailing whitespaces and funny characters
 " http://www.reddit.com/r/programming/comments/9wlb7/proggitors_do_you_like_the_idea_of_indented/c0esam1
@@ -58,6 +61,12 @@ set lazyredraw
 " For Win32 GUI: remove 't' flag from 'guioptions': no tearoff menu entries
 " let &guioptions = substitute(&guioptions, "t", "", "g")
 
+" Arrow Key Fix
+" https://github.com/spf13/spf13-vim/issues/780
+if &term[:4] == "xterm" || &term[:5] == 'screen' || &term[:3] == 'rxvt'
+  inoremap <silent> <C-[>OC <RIGHT>
+endif
+
 " Don't use Ex mode, use Q for formatting
 map Q gq
 
@@ -68,6 +77,7 @@ inoremap <C-U> <C-G>u<C-U>
 " In many terminal emulators the mouse works just fine, thus enable it.
 if has('mouse')
   set mouse=a
+  set mousehide
 endif
 
 " keyboard shortcuts
@@ -213,6 +223,10 @@ if has("autocmd")
 
   " For all text files set 'textwidth' to 80 characters.
   autocmd FileType text setlocal textwidth=80
+
+  " Instead of reverting the cursor to the last position in the buffer, we
+  " set it to the first line when editing a git commit message
+  au FileType gitcommit au! BufEnter COMMIT_EDITMSG call setpos('.', [0, 1, 1, 0])
 
   " When editing a file, always jump to the last known cursor position.
   " Don't do it when the position is invalid or when inside an event handler
