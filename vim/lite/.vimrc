@@ -47,7 +47,7 @@ set number
 " http://www.reddit.com/r/programming/comments/9wlb7/proggitors_do_you_like_the_idea_of_indented/c0esam1
 " https://wincent.com/blog/making-vim-highlight-suspicious-characters
 set list
-set listchars=nbsp:¬,tab:»·,trail:·
+set listchars=nbsp:¬,trail:$,tab:>-,extends:»,precedes:«
 
 " For Win32 GUI: remove 't' flag from 'guioptions': no tearoff menu entries
 " let &guioptions = substitute(&guioptions, "t", "", "g")
@@ -62,9 +62,6 @@ inoremap <C-U> <C-G>u<C-U>
 " In many terminal emulators the mouse works just fine, thus enable it.
 if has('mouse')
   set mouse=a
-endif
-if exists('$TMUX')  " Support resizing in tmux
-  set ttymouse=xterm2
 endif
 
 " keyboard shortcuts
@@ -192,6 +189,7 @@ endif
 
 " Fix Cursor in TMUX
 if exists('$TMUX')
+  set ttymouse=xterm2
   let &t_SI = "\<Esc>Ptmux;\<Esc>\<Esc>]50;CursorShape=1\x7\<Esc>\\"
   let &t_EI = "\<Esc>Ptmux;\<Esc>\<Esc>]50;CursorShape=0\x7\<Esc>\\"
 else
