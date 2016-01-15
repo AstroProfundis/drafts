@@ -151,10 +151,13 @@ function BoostMoveOFF()
 endfunction
 
 " Always show the status line
-set laststatus=2
+if exists("g:loaded_statline_plugin")
+  set laststatus=2
 
-" Format the status line
-set statusline=\ %{HasPaste()}%F%m%r%h\ %w\ \ CWD:\ %r%{getcwd()}%h\ \ \ Line:\ %l
+  " Format the status line
+  set statusline=\ %{HasPaste()}%F%m%r%h\ %w\ \ CWD:\ %r%{getcwd()}%h\ \ \ Line:\ %l
+endif
+let g:loaded_statline_plugin = 1
 
 function! HasPaste()
     if &paste

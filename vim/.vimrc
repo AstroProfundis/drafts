@@ -178,27 +178,30 @@ augroup phpSyntaxOverride
 augroup END
 
 " Status line
-set laststatus=2
-let g:lightline = {
-    \  'colorscheme': 'jellybeans',
-    \  'active': {
-    \    'left': [['mode', 'paste', 'readonly'],
-    \             ['fugitive', 'filename', 'modified']],
-    \    'right': [['lineinfo'],
-    \              ['formatops', 'percent'],
-    \              ['fileformat', 'fileencoding', 'filetype']]
-    \  },
-    \  'component': {
-    \    'modified': '%{&filetype=="help"?"":&modified?"+":&modifiable?"":"-"}',
-    \    'fugitive': '%{exists("*fugitive#head")?fugitive#head():""}',
-    \    'formatops': '%{&fo}'
-    \   },
-    \  'component_visible_condition': {
-    \    'readonly': '(&filetype!="help"&& &readonly)',
-    \    'modified': '(&filetype!="help"&&(&modified||!&modifiable))',
-    \    'fugitive': '(exists("*fugitive#head") && ""!=fugitive#head())',
-    \  }
-    \ }
+if exists("g:loaded_statline_plugin")
+  set laststatus=2
+  let g:lightline = {
+      \  'colorscheme': 'jellybeans',
+      \  'active': {
+      \    'left': [['mode', 'paste', 'readonly'],
+      \             ['fugitive', 'filename', 'modified']],
+      \    'right': [['lineinfo'],
+      \              ['formatops', 'percent'],
+      \              ['fileformat', 'fileencoding', 'filetype']]
+      \  },
+      \  'component': {
+      \    'modified': '%{&filetype=="help"?"":&modified?"+":&modifiable?"":"-"}',
+      \    'fugitive': '%{exists("*fugitive#head")?fugitive#head():""}',
+      \    'formatops': '%{&fo}'
+      \   },
+      \  'component_visible_condition': {
+      \    'readonly': '(&filetype!="help"&& &readonly)',
+      \    'modified': '(&filetype!="help"&&(&modified||!&modifiable))',
+      \    'fugitive': '(exists("*fugitive#head") && ""!=fugitive#head())',
+      \  }
+      \ }
+endif
+let g:loaded_statline_plugin = 1
 
 " Only do this part when compiled with support for autocommands.
 if has("autocmd")
