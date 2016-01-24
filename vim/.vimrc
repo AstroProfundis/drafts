@@ -180,6 +180,9 @@ augroup phpSyntaxOverride
   autocmd FileType php call PhpSyntaxOverride()
 augroup END
 
+" Automatic closing of quotes
+let delimitMate_expand_cr = 1
+
 " Status line
 if exists("g:loaded_statline_plugin")
   set laststatus=2
@@ -258,7 +261,7 @@ if !exists(":DiffOrig")
           \ | wincmd p | diffthis
 endif
 
-" winmanager  
+" winmanager
 let g:NERDTree_title = "[NERDTree]"
 let g:NERDSpaceDelims = 1
 function! NERDTree_Start()
