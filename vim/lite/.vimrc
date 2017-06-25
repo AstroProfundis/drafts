@@ -44,7 +44,7 @@ set linespace=0 " No extra spaces between rows
 set number
 set ignorecase " Case insensitive search
 set smartcase " Case sensitive when uc present
-set pastetoggle=<F12> " pastetoggle (sane indentation on pastes)
+set pastetoggle=<F9> " pastetoggle (sane indentation on pastes)
 
 " Visualize tabs, trailing whitespaces and funny characters
 " http://www.reddit.com/r/programming/comments/9wlb7/proggitors_do_you_like_the_idea_of_indented/c0esam1
@@ -78,7 +78,7 @@ if has('mouse')
 endif
 
 " keyboard shortcuts
-let mapleader = ','
+let mapleader = '\'
 map <C-h> <C-w>h
 map <C-j> <C-w>j
 map <C-k> <C-w>k
@@ -92,6 +92,7 @@ nmap <leader>] :TagbarToggle<CR>
 nmap <leader><space> :call whitespace#strip_trailing()<CR>
 nmap <leader>c <Plug>Kwbd
 map <silent> <leader>V :source ~/.vimrc<CR>:filetype detect<CR>:exe ":echo 'vimrc reloaded'"<CR>
+nnoremap <silent> <leader>q :nohl <cr>
 
 " Switch syntax highlighting on, when the terminal has colors
 " Also switch on highlighting the last used search pattern.
