@@ -56,9 +56,9 @@ hi CursorLineNr    guifg=#eeff88    ctermfg=228    gui=bold
 hi CursorLine    guibg=#232323    ctermbg=235    cterm=NONE
 hi CursorColumn    guibg=#232323    ctermbg=235
 hi Visual    guibg=#444444    ctermbg=238
-hi Pmenu    guifg=#221133    ctermfg=235    guibg=#ddbbee    ctermbg=183
+hi Pmenu    guifg=#ddbbee    ctermfg=183    guibg=#221133    ctermbg=235
 hi PmenuSbar    ctermbg=238
-hi PmenuSel    guifg=#ddbbee    ctermfg=183    guibg=#221133    ctermbg=235
+hi PmenuSel    guifg=#221133    ctermfg=235    guibg=#ddbbee    ctermbg=183
 hi SignColumn    guifg=#88ffff    guibg=#232323
 hi StatusLine    ctermfg=231    ctermbg=241    cterm=bold    guifg=#f8f8f2    guibg=#64645e    gui=bold
 hi StatusLineNC    ctermfg=231    ctermbg=241    cterm=NONE    guifg=#f8f8f2    guibg=#64645e    gui=NONE
