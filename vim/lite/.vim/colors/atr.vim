@@ -36,7 +36,7 @@ if exists("b:current_syntax")
 endif
 
 " General colors
-hi Normal    guifg=#eeeeee    ctermfg=255    guibg=#121212    ctermbg=232    gui=NONE
+hi Normal    guifg=#eeeeee    ctermfg=255    guibg=NONE    ctermbg=NONE    gui=NONE
 hi Cursor    guifg=NONE    guibg=#bbddee    ctermbg=153    gui=NONE
 hi MatchParen    guibg=#5566aa    ctermbg=61
 
@@ -44,7 +44,7 @@ hi MatchParen    guibg=#5566aa    ctermbg=61
 hi ErrorMsg    guifg=#000000    ctermfg=0    guibg=#ffcc88    ctermbg=222    gui=bold
 hi Folded    guifg=#8888ff    ctermfg=105    guibg=#121212    ctermbg=232    gui=bold
 hi FoldColumn    guifg=#8888ff    ctermfg=105    guibg=#121212    ctermbg=232    gui=bold
-hi NonText    guifg=#888888    ctermfg=102    guibg=#121212    ctermbg=232    gui=NONE
+hi NonText    guifg=#888888    ctermfg=102    guibg=#121212    ctermbg=NONE    gui=NONE
 hi Search    guifg=#6600aa    ctermfg=55    guibg=#ddbbee    ctermbg=183    gui=underline
 hi IncSearch    ctermfg=235    ctermbg=186    cterm=NONE    guifg=#272822    guibg=#e6db74    gui=NONE
 hi SpellBad    guisp=#bb5555
@@ -53,8 +53,8 @@ hi SpellRare    guisp=#bb55bb
 hi SpellLocal    ctermfg=232    guifg=#121212    guisp=#55bbbb
 hi LineNr    guifg=#bbbb88    ctermfg=144
 hi CursorLineNr    guifg=#eeff88    ctermfg=228    gui=bold
-hi CursorLine    guibg=#232323    ctermbg=235    cterm=NONE
-hi CursorColumn    guibg=#232323    ctermbg=235
+hi CursorLine    guibg=#232323    ctermbg=240    cterm=NONE
+hi CursorColumn    guibg=#232323    ctermbg=240
 hi Visual    guibg=#444444    ctermbg=238
 hi Pmenu    guifg=#ddbbee    ctermfg=183    guibg=#221133    ctermbg=235
 hi PmenuSbar    ctermbg=238
