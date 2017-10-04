@@ -44,7 +44,7 @@ hi MatchParen    guibg=#5566aa    ctermbg=61
 hi ErrorMsg    guifg=#000000    ctermfg=0    guibg=#ffcc88    ctermbg=222    gui=bold
 hi Folded    guifg=#8888ff    ctermfg=105    guibg=#121212    ctermbg=232    gui=bold
 hi FoldColumn    guifg=#8888ff    ctermfg=105    guibg=#121212    ctermbg=232    gui=bold
-hi NonText    guifg=#888888    ctermfg=102    guibg=#121212    ctermbg=NONE    gui=NONE
+hi NonText    guifg=#888888    ctermfg=102    guibg=NONE    ctermbg=NONE    gui=NONE
 hi Search    guifg=#6600aa    ctermfg=55    guibg=#ddbbee    ctermbg=183    gui=underline
 hi IncSearch    ctermfg=235    ctermbg=186    cterm=NONE    guifg=#272822    guibg=#e6db74    gui=NONE
 hi SpellBad    guisp=#bb5555
