@@ -64,3 +64,6 @@
 [submodule "vim/.vim/bundle/vim-prometheus"]
 	path = vim/.vim/bundle/vim-prometheus
 	url = https://github.com/tcolgate/vim-prometheus.git
+[submodule "vim/.vim/bundle/beancount"]
+	path = vim/.vim/bundle/beancount
+	url = https://github.com/nathangrigg/vim-beancount.git
