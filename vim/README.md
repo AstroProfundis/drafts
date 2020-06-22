@@ -10,9 +10,13 @@ After cloned this repo to your local, update the submodules:
 
     git submodule update --init --recursive
 
-And then copy all the files to your home directory:
+Then copy all the files to your home directory:
 
     mkdir -p ~/vim.bak && mv ~/.vim{,rc} ~/vim.bak/
     cp -rf vim/.vim* ~/
+
+And install binaries for `vim-go`, start `vim` and execute:
+
+    :GoInstallBinaries
 
 And all is done.

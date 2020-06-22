@@ -39,12 +39,13 @@ if has("vms")
 else
   set backupdir=~/.vim/backup,/tmp " keep a backup file
 endif
-set history=80 " keep 50 lines of command line history
+set history=80 " keep 80 lines of command line history
 set ruler " show the cursor position all the time
 set showcmd " display incomplete commands
 set wrapscan
 set linespace=0 " No extra spaces between rows
 set number
+set showmatch
 set ignorecase " Case insensitive search
 set smartcase " Case sensitive when uc present
 set pastetoggle=<F9> " pastetoggle (sane indentation on pastes)
@@ -161,7 +162,6 @@ function BoostMoveOFF()
     endif
 endfunction
 
-let python_version_2 = 1
 let python_highlight_all = 1
 let python_highlight_builtins = 1
 let python_highlight_exceptions = 1
